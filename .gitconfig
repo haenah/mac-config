@@ -1,0 +1,10 @@
+[core]
+	editor = zed -w
+[user]
+	name = haenah
+	email = 48505914+haenah@users.noreply.github.com
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
