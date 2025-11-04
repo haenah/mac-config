@@ -6,6 +6,7 @@ alias v="code"
 
 alias ga='git add'
 alias gc='git commit'
+alias gcn='git commit -n'
 alias gc!='git commit --amend'
 alias gp='git push'
 alias gpf='git push --force-with-lease'
