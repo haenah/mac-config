@@ -1,4 +1,4 @@
-for file in $(ls -A | grep -v 'main.zsh'); do
+for file in $(ls -A | grep -v -E '(main.zsh|assets)'); do
   ln -sfn "$PWD/$file" "$HOME/$file"
 done
 
@@ -6,7 +6,10 @@ done
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 /opt/homebrew/bin/brew install nvm tig gh
+/opt/homebrew/bin/brew install --cask visual-studio-code raycast amazon-q
 mkdir ~/.nvm
+
+open assets/Monaspace\ Neon\ Var.ttf
 
 defaults write -g ApplePressAndHoldEnabled -bool false
 
