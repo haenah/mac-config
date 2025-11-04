@@ -8,4 +8,6 @@ done
 /opt/homebrew/bin/brew install nvm tig gh
 mkdir ~/.nvm
 
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 echo "You need to restart your mac to apply the changes."
