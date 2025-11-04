@@ -1,6 +1,4 @@
 alias sudo='sudo '
-alias z='zed'
-alias zz='z ~/.zshrc'
 alias t="tig"
 alias n="node"
 alias l="ls -al"
@@ -16,14 +14,19 @@ alias gur='git pull --rebase --autostash'
 alias gco='git checkout'
 alias gs='git switch'
 alias gsn='git switch -c'
-alias gb='git branch'
+alias gb='git branch -a'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
-alias gbda='git branch --merged stg | egrep -v "(^\*|stg)" | xargs git branch -d'
-alias gba='git branch -a'
+\gbda() {
+  git branch --merged "$1" | grep -v "\*" | grep -v " $1$" | xargs -n 1 git branch -d
+}
+\gbDa() {
+  git branch --merged "$1" | grep -v "\*" | grep -v " $1$" | xargs -n 1 git branch -D
+}
 alias gbm='git branch -m'
 alias grl="git reset HEAD~1"
 alias gf='git fetch'
+alias gfp='git fetch --prune'
 alias gei='git rebase -i'
 alias gec='git rebase --continue'
 alias gea='git rebase --abort'
