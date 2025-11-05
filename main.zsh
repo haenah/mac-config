@@ -9,7 +9,7 @@ done
 /opt/homebrew/bin/brew install --cask visual-studio-code raycast amazon-q hammerspoon
 mkdir ~/.nvm
 
-open assets/Monaspace\ Neon\ Var.ttf
+cp ./assets/Monaspace\ Neon\ Var.ttf ~/Library/Fonts/
 
 defaults write -g ApplePressAndHoldEnabled -bool false
 
