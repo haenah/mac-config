@@ -1,4 +1,4 @@
-for file in $(ls -A | grep -v -E '(main.zsh|assets)'); do
+for file in $(ls -A | grep -v -E '(main.zsh|assets|README.md|.gitignore|.git)'); do
   ln -sfn "$PWD/$file" "$HOME/$file"
 done
 
