@@ -3,6 +3,7 @@ alias t="tig"
 alias n="node"
 alias l="ls -al"
 alias v="code"
+alias g="gemini"
 
 alias ga='git add'
 alias gc='git commit'
@@ -15,7 +16,7 @@ alias gur='git pull --rebase --autostash'
 alias gco='git checkout'
 alias gs='git switch'
 alias gsn='git switch -c'
-alias gb='git branch -a'
+alias gb='git branch'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 \gbda() {
