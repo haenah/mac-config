@@ -4,6 +4,9 @@ alias n="node"
 alias l="ls -al"
 alias v="code"
 alias g="gemini"
+alias c="claude"
+alias co="colima"
+alias d="docker"
 
 alias ga='git add'
 alias gc='git commit'
