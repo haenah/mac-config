@@ -4,7 +4,7 @@ alias n="node"
 alias l="ls -al"
 alias v="code"
 alias g="gemini"
-alias c="claude"
+alias c="codex"
 alias co="colima"
 alias d="docker"
 
@@ -40,6 +40,7 @@ alias gtl='git tag -l'
 alias gtd='git tag -d'
 alias gst='git stash'
 alias gstp='git stash pop'
+alias gcp='git cherry-pick'
 
 alias ghpw='gh pr create --web'
 
